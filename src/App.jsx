@@ -1,10 +1,20 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import NavBar from "./Components/NavBar/NavBar";
+import Home from "./Pages/Home/Home";
+import Footer from "./Components/Footer/Footer";
+import "./App.css";
 
 function App() {
-  return 
+  return (
+    <Router>
+      <NavBar />
+      <Routes>
+        <Route path="*" element={<>NOT FOUND</>} />
+        <Route path="/" element={Home} />
+      </Routes>
+      <Footer />
+    </Router>
+  );
 }
 
-export default App
+export default App;
