@@ -12,7 +12,7 @@ function NavBar() {
     <header class="bg-white font-poppins">
       <nav class="flex justify-between items-center w-[92%] mx-auto">
         <div>
-          <img class="w-16" src={logo} alt="Logo" />
+          <a href="/" class="font-anton">PEAK PERFORMANCE</a>
         </div>
         <div
           class={`nav-links md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 ${
@@ -26,8 +26,8 @@ function NavBar() {
               </a>
             </li>
             <li>
-              <a class="hover:text-gray-500" href="games">
-                Games
+              <a class="hover:text-gray-500" href="products">
+                Products
               </a>
             </li>
             <li>
